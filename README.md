@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Super-Translator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Super-Translator is a React Web, which can get jokes from a third party APIs, and translates it in different languages using another third party API.
 
-## Available Scripts
+## Getting Started
 
-In the project directory, you can run:
+These instructions will help you get and run a copy of the project on your local computer for development purposes. Before you begin, make sure the following requirements are met:
 
-### `npm start`
+- You have installed the latest version of [Node.js and npm](https://nodejs.org/en/download/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### How to Installing / Running
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To install Super Translator, follow these steps:
 
-### `npm test`
+1. Clone the repository: [Prac_Translator](https://github.com/TILTL/Prac-Translator)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Navigate to the project directory: cd ./my_translator
 
-### `npm run build`
+3. Install all dependencies: npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. Run the web: npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Design Introduction
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The app is built by React using functional components and hooks. It takes jokes from a public API and translates them into a target language of the user's choice. Users can also customise their own jokes and translate them in the input box. The app supports multi-language translation
 
-### `npm run eject`
+In order to make the application more readable, efficient and maintainable, the application has been designed with modularity in mind and has been split into separate functional components. The Axios library is used to handle HTTP requests and AntD is used to build the user interface components.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **AntD**: This design system provides a set of high quality React components that are very flexible and easy to use. This saves time that would otherwise be spent on styling and allows me to focus more on core functionality.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Axios**: Axios was chosen over the fetch API because it has a more readable and concise syntax, has built-in conversion requests and responses, and is compatible with multiple browsers.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Functional Components and Hooks**: I used functional components and hooks because it is easier to understand and has a cleaner, more readable syntax than class components. Using functional components and hooks also improves performance in my web
